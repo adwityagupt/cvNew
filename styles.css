@@ -1,0 +1,188 @@
+/*************************Note************************/
+
+/*1em/1rem = 100% = 16px*/
+/*
+=>> px is static -> it will not change corresponding to the screen size.
+=>> %, em & rem are dynamic, it will adjust corresponding to the screen size.
+=>> But rem has an advantage -> if somewhere in the parent tag we have specified some other font-size, it won't add-up with this rem. but in case of em or %, the parent tag
+    font size geta add-up.
+*/
+
+/***********************Tag Selector*****************/
+
+body{
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1{
+  font-size: 5.625rem;      /* rem=root em */
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+}
+
+strong{
+  color: #66BFBF;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+hr{
+  border-style: dotted none none;
+  border-color: grey;
+  border-width: 5px;
+  width: 5%;
+}
+
+a{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 10px;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #EAF6F6;
+
+}
+
+p{
+  text-align: center;
+  font-weight: 300;
+  color: #545454;
+  line-height: 2;
+}
+
+/***********************Class Selector*****************/
+
+.top-container{
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container{
+
+}
+
+.bottom-container{
+  margin-top: 5%;
+  background-color: #66BFBF;
+  padding: 30px 0 10px;
+}
+
+.top-cloud{
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-cloud{
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.profile{
+  margin: 100px 0;
+}
+
+.skill-row{
+  width: 50%;
+  margin: 100px auto;
+}
+
+.left{
+  text-align: left;
+}
+
+.java{
+  height: 180px;
+  width: 150px;
+  float: left;
+  margin-right: 30px;
+}
+
+.html{
+  height: 180px;
+  width: 150px;
+  float: right;
+  margin-left: 30px;
+}
+
+.css{
+  height: 180px;
+  width: 150px;
+  float: left;
+  margin-right: 30px;
+}
+
+.javascript{
+  height: 180px;
+  width: 150px;
+  float: right;
+  margin-left: 30px;
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF !important;
+  font-size: 20px;
+  text-shadow: 1px 1px 0px #7CACDE;
+  box-shadow: 1px 1px 1px #BEE2F9;
+  padding: 10px 25px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background: #63B8EE;
+  background: linear-gradient(top,  #11CDD4,  #11999E);
+  background: -ms-linear-gradient(top,  #11CDD4,  #11999E);
+  background: -webkit-gradient(linear, left top, left bottom, from(#11CDD4), to(#11999E));
+  background: -moz-linear-gradient(top,  #11CDD4,  #11999E);
+  text-decoration: none;
+  margin-bottom: 20%;
+}
+.btn:hover {
+  color: #ffffff !important;
+  background: #468CCF;
+  background: linear-gradient(top,  #30E3CB,  #2BC4AD);
+  background: -ms-linear-gradient(top,  #30E3CB,  #2BC4AD);
+  background: -webkit-gradient(linear, left top, left bottom, from(#30E3CB), to(#2BC4AD));
+  background: -moz-linear-gradient(top,  #30E3CB,  #2BC4AD);
+}
+
+
+/***********************id Selector*****************/
+
+#profilepic{
+  height: 180px;
+  width: 150px;
+  border-radius: 80%;
+}
+
+#intro{
+  width: 30%;
+  margin: auto;
+}
+
+#contact-message{
+  width: 60%;
+  margin: 40px auto 60px;
+}
+
+#copyright{
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
